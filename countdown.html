@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RMN Countdown</title>
+    <style>
+        /* Styles for the countdown bar */
+        #countdown-bar {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 20px;
+            font-family: Arial, sans-serif;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        body {
+            margin-top: 60px; /* To prevent content from overlapping the bar */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Countdown bar at the top of the page -->
+    <div id="countdown-bar">
+        RMN FALL OFF IN: <span id="countdown"></span>
+    </div>
+
+    <script>
+        // Set the date we're counting down to
+        const countdownDate = new Date("August 31, 2024 21:00:00 GMT").getTime();
+
+        // Update the countdown every 1 second
+        const countdownFunction = setInterval(function() {
+
+            // Get current date and time
+            const now = new Date().getTime();
+
+            // Find the time difference between now and the countdown date
+            const timeLeft = countdownDate - now;
+
+            // Time calculations for days, hours, minutes, and seconds
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="countdown"
+            document.getElementById("countdown").innerHTML = 
+                days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+            // If the countdown is finished, display "RMN HAS FALLEN"
+            if (timeLeft < 0) {
+                clearInterval(countdownFunction);
+                document.getElementById("countdown").innerHTML = "RMN HAS FALLEN";
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>

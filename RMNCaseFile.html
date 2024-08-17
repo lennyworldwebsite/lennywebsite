@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RMN Case File</title>
+    <link rel="icon" type="image/png" href="media/favicon.png">
+    <link rel="stylesheet" href="media/style.css">
+    <link href="https://fonts.bunny.net/css?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <nav class="desktop_navbar">
+      <a href="#"><img class="desktop_navbar_logo_img" src="media/RMN ICON.png" alt="logo"></a>
+      <a href="socials.html" class=body> <a href="socials.html" class="desktop_navbar_link">Socials</a>
+      <a href="minecraft.html" class=body> <a href="minecraft.html" class="desktop_navbar_link">Minecraft</a>
+      </body>
+      </html>       
+      <div class="desktop_navbar_link2_div">
+          <!DOCTYPE html>
+<html>
+<body>
+
+
+
+<script>
+function LinkRedirect() {
+  location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+}
+</script>
+
+</body>
+</html> 
+
+      </div>
+    </nav>
+    
+    <div class="mobile_navbar">
+      <a href="#" class="mobile_navbar_logo_img_a"><img class="mobile_navbar_logo_img" src="media/rmn" alt="logo"></a>
+      <div id="mobile_navbar_links">
+        <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="socials.html">Socials</a>
+        <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="minecraft.html">Minecraft</a>
+        <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click Me!</a>
+
+    </div>
+        <div class="icon" onclick="mobile_navbar_link_hider()">
+            <i class="fa fa-bars"></i>
+        </div>
+        <script>
+            function mobile_navbar_link_hider() {
+            var x = document.getElementById("mobile_navbar_links");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+            } 
+            
+
+        </script>
+    </div>
+    <div class="mainflex">
+      <div class="main1">
+        <a class="main1_logo_a" href="#">
+            <img class="main1_logo" src="media/RMN_JAIL.png" alt="logo">
+        </a>
+        <div class="main1_description">
+          <a>WoahRMN<br>The</a>
+          <a class="main1_red">Most Wanted Criminal</a><a>.</a>
+        </div>
+        </script> 
+        </div>
+        </a>
+        <script>
+          const scrollLinks = document.querySelectorAll('.scroll');
+          scrollLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+              event.preventDefault();
+              const target = document.querySelector(link.getAttribute('href'));
+              const offsetTop = target.offsetTop;
+              window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+              });
+            });
+          });
+        </script>
+      </div>
+        </div>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Interactive Website</title>
+            <style>
+                body {
+                    margin: 0;
+                    font-family: Arial, sans-serif;
+                    overflow: auto; /* Allow scrolling by default */
+                }
+        
+                /* Class to disable scrolling */
+                .no-scroll {
+                    overflow: hidden;
+                }
+        
+                #darkOverlay {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.9); /* Darker overlay */
+                    color: white;
+                    display: none; /* Initially hidden */
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 1000;
+                    transition: opacity 0.5s ease;
+                }
+        
+                .hidden {
+                    display: none;
+                }
+        
+                #prompt, #confirmationPrompt {
+                    text-align: center;
+                }
+        
+                #boobianaImage {
+                    max-width: 80%;
+                    height: auto;
+                    margin-bottom: 20px;
+                }
+        
+                button {
+                    margin: 10px;
+                    padding: 10px 20px;
+                    border: none;
+                    background: #333;
+                    color: white;
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+        
+                button:hover {
+                    background: #555;
+                }
+        
+                #typingText {
+                    white-space: pre-wrap;
+                    font-size: 1.2em;
+                    margin-bottom: 20px;
+                }
+        
+                /* Hide the prompt elements initially */
+                #prompt.hidden {
+                    display: none;
+                }
+        
+                /* Hide main content during jumpscare */
+                #mainContent.hidden {
+                    display: none;
+                }
+        
+                /* Hide Boobiana image and button initially */
+                #boobianaImage.hidden,
+                #understoodButton.hidden {
+                    display: none;
+                }
+        
+                /* Style for the well-done message */
+                #wellDoneMessage {
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: rgba(0, 0, 0, 0.8);
+                    color: white;
+                    padding: 20px;
+                    border-radius: 10px;
+                    z-index: 1001;
+                    display: none;
+                    font-size: 1.5em;
+                }
+            </style>
+        </head>
+        <body>
+            <div id="darkOverlay">
+                <div id="prompt">
+                    <img src="media/Boobiana PFP.png" alt="Boobiana" id="boobianaImage" class="hidden">
+                    <div id="typingText"></div>
+                    <button id="understoodButton" class="hidden">Understood</button>
+                </div>
+                <div id="confirmationPrompt" class="hidden">
+                    <p>Are you sure?</p>
+                    <button id="yesButton">Yes</button>
+                    <button id="noButton">No</button>
+                </div>
+            </div>
+        
+            <div id="mainContent">
+                <!-- Main content of your website goes here -->1
+            </div>
+        
+            <div id="wellDoneMessage">Well done.</div>
+        
+            <!-- Background song that plays on loop -->
+            <audio id="backgroundSong" src="SoundEffects/BoobianaTruth/BackroundSong.mp3" loop></audio>
+        
+            <!-- Typing effect sound -->
+            <audio id="typingSound" src="SoundEffects/BoobianaTruth/TypingEffect.mp3"></audio>
+        
+            <script>
+                let keyPressCount = 0;
+                let lastKeyPressTime = 0;
+                const PRESS_LIMIT = 5;
+                const TIME_LIMIT = 3000; // 3 seconds
+                let isOverlayVisible = false;
+                let hasTriggered = false; // Track if the jumpscare has been triggered
+                let typingSound = document.getElementById('typingSound');
+                let backgroundSong = document.getElementById('backgroundSong');
+                let typingTextElement = document.getElementById('typingText');
+                let isTyping = false;
+        
+                document.addEventListener('keydown', handleKeyPress);
+                document.addEventListener('touchstart', handleTouchStart);
+        
+                let touchCount = 0;
+                let touchStartTime = 0;
+        
+                function handleKeyPress(event) {
+                    if (event.key === 'b' || event.key === 'B') {
+                        const currentTime = Date.now();
+                        if (currentTime - lastKeyPressTime <= TIME_LIMIT) {
+                            keyPressCount++;
+                        } else {
+                            keyPressCount = 1; // Reset count if time limit exceeded
+                        }
+                        lastKeyPressTime = currentTime;
+        
+                        if (keyPressCount >= PRESS_LIMIT && !hasTriggered) {
+                            if (!isOverlayVisible) {
+                                showDarkOverlayForTypingMessage();
+                                hasTriggered = true; // Mark jumpscare as triggered
+                            }
+                            keyPressCount = 0; // Reset after triggering
+                        }
+                    }
+                }
+        
+                function handleTouchStart() {
+                    const currentTime = Date.now();
+                    if (currentTime - touchStartTime <= TIME_LIMIT) {
+                        touchCount++;
+                    } else {
+                        touchCount = 1; // Reset count if time limit exceeded
+                    }
+                    touchStartTime = currentTime;
+        
+                    if (touchCount >= PRESS_LIMIT && !hasTriggered) {
+                        if (!isOverlayVisible) {
+                            showDarkOverlayForTypingMessage();
+                            hasTriggered = true; // Mark jumpscare as triggered
+                        }
+                        touchCount = 0; // Reset after triggering
+                    }
+                }
+        
+                function showDarkOverlayForTypingMessage() {
+                    const overlay = document.getElementById('darkOverlay');
+                    document.getElementById('mainContent').classList.add('hidden'); // Hide main content
+                    document.getElementById('boobianaImage').classList.remove('hidden'); // Show the Boobiana image
+                    document.getElementById('understoodButton').classList.remove('hidden'); // Show the understood button
+                    overlay.style.display = 'flex'; // Show dark overlay
+                    document.body.classList.add('no-scroll'); // Disable scrolling
+                    displayTypingMessage("Boobiana isn't real, she's a man, a robot, controlled by the UK Government, mark my words.");
+                }
+        
+                function displayTypingMessage(message) {
+                    let index = 0;
+                    typingTextElement.innerHTML = ''; // Clear previous text
+        
+                    function typeMessage() {
+                        if (index < message.length) {
+                            typingTextElement.innerHTML += message[index++];
+                            typingSound.play(); // Play typing sound for each character
+                            setTimeout(typeMessage, 50); // Typing speed
+                        } else {
+                            // Typing animation done, stop audio
+                            typingSound.pause();
+                            typingSound.currentTime = 0; // Reset audio position
+                        }
+                    }
+        
+                    typeMessage();
+                }
+        
+                document.getElementById('understoodButton').addEventListener('click', () => {
+                    document.getElementById('prompt').classList.add('hidden');
+                    document.getElementById('confirmationPrompt').classList.remove('hidden');
+                    // Hide the Boobiana image and buttons after understood button is clicked
+                    document.getElementById('boobianaImage').classList.add('hidden');
+                    document.getElementById('understoodButton').classList.add('hidden');
+                });
+        
+                document.getElementById('yesButton').addEventListener('click', () => {
+                    const overlay = document.getElementById('darkOverlay');
+                    const wellDoneMessage = document.getElementById('wellDoneMessage');
+                    overlay.style.opacity = '0'; // Start fade-out
+                    wellDoneMessage.style.display = 'block'; // Show "Well done." message
+                    setTimeout(() => {
+                        wellDoneMessage.style.display = 'none'; // Hide "Well done." message
+                        setTimeout(() => {
+                            overlay.style.display = 'none'; // Hide dark overlay
+                            document.getElementById('mainContent').classList.remove('hidden'); // Show main content
+                            document.body.classList.remove('no-scroll'); // Restore scrolling
+                            isOverlayVisible = false;
+                        }, 500); // Delay to match fade-out duration
+                    }, 3000); // "Well done." message display duration
+                });
+        
+                document.getElementById('noButton').addEventListener('click', () => {
+                    typingSound.currentTime = 0; // Reset audio position before playing
+                    typingSound.play(); // Play typing sound
+                    backgroundSong.play(); // Play background song on loop
+                    document.body.innerHTML = 
+                        <div style="text-align: center; color: white; background: black; height: 100vh; display: flex; justify-content: center; align-items: center;">
+                            <p id="finalMessage"></p>
+                        </div>;
+                    document.body.classList.add('no-scroll'); // Disable scrolling
+        
+                    const finalMessageElement = document.getElementById('finalMessage');
+                    const finalMessages = [
+                        "Your faith has been chosen",
+                        "...",
+                        "You are now stuck here forever"
+                    ];
+                    let messageIndex = 0;
+        
+                    function typeFinalMessage() {
+                        if (messageIndex < finalMessages.length) {
+                            const message = finalMessages[messageIndex];
+                            finalMessageElement.innerHTML = ''; // Clear previous text
+                            let charIndex = 0;
+        
+                            function typeChar() {
+                                if (charIndex < message.length) {
+                                    finalMessageElement.innerHTML += message[charIndex++];
+                                    setTimeout(typeChar, 50); // Typing speed
+                                } else {
+                                    messageIndex++;
+                                    setTimeout(typeFinalMessage, 1000); // Wait before displaying the next message
+                                }
+                            }
+        
+                            typeChar();
+                        } else {
+                            // Keep the final message on the screen forever
+                            finalMessageElement.innerHTML = finalMessages[finalMessages.length - 1];
+                        }
+                    }
+        
+                    typeFinalMessage();
+                });
+            </script>
+        </body>
+        </html>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Case File: RMN - The Crimes of Reubenia</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    line-height: 1.6;
+                    margin: 20px;
+                    background-color: #f4f4f4;
+                    color: #333;
+                }
+                h1 {
+                    text-align: center;
+                    color: #4CAF50;
+                }
+                h2 {
+                    color: #333;
+                }
+                h3 {
+                    color: #ff6347;
+                }
+                .case-section {
+                    background-color: #fff;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    border-radius: 5px;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                }
+                .case-section p {
+                    margin: 10px 0;
+                }
+            </style>
+        </head>
+        <body>
+            <iframe src="countdown.html" style="border: 0; width: 100%; height: 60px;"></iframe>
+
+            <h1>Case File: RMN - The Crimes of Reubenia</h1>
+        
+            <div class="case-section">
+                <h2>Subject: RMN (Reuben Mod Narcissus)</h2>
+                <p><strong>Alias</strong>: Reubenia</p>
+                <p><strong>Age</strong>: 19</p>
+                <p><strong>Nationality</strong>: Irish</p>
+                <p><strong>Occupation</strong>: Irish Variety Streamer</p>
+                <p><strong>Criminal Status</strong>: Under Investigation (Pending multiple charges)</p>
+                <p><strong>Primary Allegations</strong>: Assault, Fraud, Destruction of Property, Cybercrimes, Environmental Terrorism</p>
+            </div>
+        
+            <div class="case-section">
+                <h3>1. Kissing His Mods</h3>
+                <p><strong>Allegation:</strong> Assault (Unwanted Advances)</p>
+                <p><strong>Details:</strong> Multiple moderators of Reubenia’s Twitch channel have come forward with claims that RMN engaged in unsolicited physical contact. During fan meetups, it is alleged that RMN kissed several mods without explicit consent, blurring the line between friendly behavior and personal boundaries.</p>
+                <p><strong>Status:</strong> Under investigation. Statements have been collected from five separate moderators. More interviews are pending.</p>
+            </div>
+        
+            <div class="case-section">
+                <h3>2. Touching People in Fall Guys</h3>
+                <p><strong>Allegation:</strong> Online Harassment & Game Tampering</p>
+                <p><strong>Details:</strong> RMN was accused of repeatedly "grabbing" and "touching" other players’ avatars excessively in <em>Fall Guys</em>. Viewers and other players claimed this behavior crossed the line of good sportsmanship, targeting certain players to frustrate them.</p>
+                <p><strong>Status:</strong> Evidence compiled through stream footage. No legal ramifications yet, though it has led to community complaints.</p>
+            </div>
+        
+            <div class="case-section">
+                <h3>3. Internet Fraud</h3>
+                <p><strong>Allegation:</strong> Fraudulent Online Transactions</p>
+                <p><strong>Details:</strong> RMN allegedly participated in fraudulent transactions involving cryptocurrencies and scammed his audience by selling fake products during streams and fake "giveaways" in exchange for money and personal information.</p>
+                <p><strong>Status:</strong> Financial records are being analyzed. Victims are being contacted for further information.</p>
+            </div>
+        
+            <div class="case-section">
+                <h3>4. Robbery</h3>
+                <p><strong>Allegation:</strong> Physical Theft</p>
+                <p><strong>Details:</strong> RMN is suspected of involvement in a robbery of a local convenience store in Galway. CCTV footage shows a masked individual matching RMN's height and build, who allegedly stole €400 and several cases of energy drinks.</p>
+                <p><strong>Status:</strong> CCTV footage is under review. Witnesses are being interviewed for identification.</p>
+            </div>
+        
+            <div class="case-section">
+                <h3>5. Pyramid Scheme</h3>
+                <p><strong>Allegation:</strong> Fraudulent Business Practice</p>
+                <p><strong>Details:</strong> RMN is accused of running a pyramid scheme targeting his Twitch audience. He promised streaming tips in exchange for investments, but those involved saw no returns, while RMN profited.</p>
+                <p><strong>Status:</strong> Financial investigation ongoing. Multiple victims have come forward.</p>
+            </div>
+        
+            <div class="case-section">
+                <h3>6. Purchasing Andrew Tate's Course</h3>
+                <p><strong>Allegation:</strong> Supporting Fraudulent Services</p>
+                <p><strong>Details:</strong> RMN purchased Andrew Tate’s "Hustler’s University" course, a widely criticized scheme. While not illegal, the purchase raised concerns over his endorsement of unethical practices.</p>
+                <p><strong>Status:</strong> Not a crime, but adds to the pattern of morally dubious decisions.</p>
+            </div>
+        
+            <div class="case-section">
+                <h3>7. Purging His Mods</h3>
+                <p><strong>Allegation:</strong> Hostile Online Environment (Workplace Misconduct)</p>
+                <p><strong>Details:</strong> RMN allegedly purged his mods, firing them abruptly when they expressed dissent. This led to claims of emotional abuse and retaliation against community members.</p>
+                <p><strong>Status:</strong> Statements from affected mods have been collected, with further interviews pending.</p>
+            </div>
+        
+            <div class="case-section">
+                <h3>8. Blowing Up France</h3>
+                <p><strong>Allegation:</strong> International Terrorism</p>
+                <p><strong>Details:</strong> RMN allegedly participated in a coordinated online attack that disrupted French government websites and services. This extreme allegation is under serious investigation.</p>
+                <p><strong>Status:</strong> International authorities are investigating, with evidence of RMN's involvement under review.</p>
+            </div>
+        
+            <div class="case-section">
+                <h3>9. Flooding Galway</h3>
+                <p><strong>Allegation:</strong> Environmental Terrorism</p>
+                <p><strong>Details:</strong> RMN is accused of tampering with Galway’s flood defenses during a storm, leading to catastrophic damage. There are reports he bragged about his involvement on Discord, but direct evidence is pending.</p>
+                <p><strong>Status:</strong> Galway authorities are collaborating with environmental agencies to investigate the claims.</p>
+            </div>
+        
+            <div class="case-section">
+                <h2>Conclusion</h2>
+                <p>Reubenia’s case reflects a growing trend of influencers engaging in serious crimes and unethical practices. The severity of these accusations demands thorough investigation, especially in areas of fraud, robbery, and environmental terrorism.</p>
+            </div>
+        
+            <div class="case-section">
+                <h2>Next Steps</h2>
+                <ul>
+                    <li>Finalizing witness statements</li>
+                    <li>Further financial audits and digital investigations</li>
+                    <li>Collaboration with international law enforcement agencies for cross-border incidents</li>
+                </ul>
+            </div>
+        
+            <div class="case-section">
+                <p><strong>Lead Investigator:</strong> GalaxyEXE</p>
+                <p><strong>Assigned Prosecutor:</strong> KuiperLIVE</p>
+                <p><strong>Date:</strong> August 15, 2024</p>
+            </div>
+        
+        </body>
+        </html>
+        
+</body>
+</html>
+    </svg></a></div>
+    <footer class="copyright_div">
+      <a href="https://github.com/FQQD/MCServer-Web-Template" class="copyright">Made by FQQD 2023 All rights deserved. | Edited by GalaxyEXE : ]</a>
+    </footer>
+  </body>
+</html>

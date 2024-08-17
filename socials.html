@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="icon" type="image/png" href="media/favicon.png">
+    <link rel="stylesheet" href="media/style.css">
+    <link href="https://fonts.bunny.net/css?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <nav class="desktop_navbar">
+      <a href="#"><img class="desktop_navbar_logo_img" src="media/RMN ICON.png" alt="logo"></a>
+      <a href="home.html" class=body> <a href="home.html" class="desktop_navbar_link">Home</a>
+      <a href="minecraft.html" class=body> <a href="minecraft.html" class="desktop_navbar_link">Minecraft</a>
+      <!DOCTYPE html>
+      </body>
+      </html>       
+      <div class="desktop_navbar_link2_div">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="desktop_navbar_link2">Join Us!</a>
+      <!DOCTYPE html>
+</div>
+</nav>
+    
+    <div class="mobile_navbar">
+      <a href="#" class="mobile_navbar_logo_img_a"><img class="mobile_navbar_logo_img" src="media/rmn" alt="logo"></a>
+      <div id="mobile_navbar_links">
+        <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="home.html">Home</a>
+        <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="minecraft.html">Minecraft</a>
+    </div>
+        <div class="icon" onclick="mobile_navbar_link_hider()">
+            <i class="fa fa-bars"></i>\\
+        </div>
+        <script>
+            function mobile_navbar_link_hider() {
+            var x = document.getElementById("mobile_navbar_links");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+            } 
+            
+
+        </script>
+
+
+    </div>
+    <div class="mainflex">
+      <div class="main1">
+        <a class="main1_logo_a" href="#">
+            <img class="main1_logo" src="media/RMN BIG.png" alt="logo">
+        </a>
+        <!DOCTYPE html>
+<html>
+
+<head></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Website</title>
+    <style>
+        /* Jump scare styles */
+        #jumpscare {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            color: red;
+            text-align: center;
+            z-index: 9999;
+        }
+
+        #jumpscare img {
+            max-width: 100%;
+            max-height: 80%;
+            margin-top: 50px;
+        }
+
+        #jumpscare h1 {
+            font-size: 50px;
+            margin-top: 20px;
+        }
+
+        #jumpscare button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Jump scare div -->
+    <div id="jumpscare">
+        <img src="media/Jumpscare.png" alt="Jump Scare">
+        <h1>You Have Been Pissed!</h1>
+        <button onclick="closeJumpScare()">Close</button>
+    </div>
+
+    <!-- Audio elements for the jump scare sounds -->
+    <audio id="jumpscare-sound-1" src="SoundEffects/PissCatJumpscare/Scream.mp3"></audio>
+    <audio id="jumpscare-sound-2" src="SoundEffects/PissCatJumpscare/Pissing Sound.mp3" loop></audio>
+
+    <script>
+        let pCount = 0;
+        let tapCount = 0;
+        let timer;
+        const TIMER_DURATION = 3000; // 3 seconds
+
+        const sound1 = document.getElementById('jumpscare-sound-1');
+        const sound2 = document.getElementById('jumpscare-sound-2');
+
+        // Function to reset the timer
+        function resetTimer() {
+            clearTimeout(timer);
+            timer = setTimeout(() => {
+                pCount = 0;
+                tapCount = 0;
+            }, TIMER_DURATION);
+        }
+
+        // Keyboard event for desktop
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'P' || event.key === 'p') {
+                pCount++;
+                resetTimer(); // Reset timer on each key press
+                if (pCount === 4) {
+                    triggerJumpScare();
+                }
+            }
+        });
+
+        // Touch event for mobile
+        document.addEventListener('touchstart', function(event) {
+            tapCount++;
+            resetTimer(); // Reset timer on each tap
+            if (tapCount === 5) {
+                triggerJumpScare();
+            }
+        });
+
+        function triggerJumpScare() {
+            document.getElementById('jumpscare').style.display = 'block';
+
+            // Play the first sound
+            sound1.play();
+
+            // When the first sound ends, play the second sound
+            sound1.addEventListener('ended', function() {
+                sound2.play();
+            });
+        }
+
+        function closeJumpScare() {
+            document.getElementById('jumpscare').style.display = 'none';
+            pCount = 0; // Reset the counter for desktop
+            tapCount = 0; // Reset the counter for mobile
+
+            // Stop all sounds
+            sound1.pause();
+            sound1.currentTime = 0; // Reset to the start
+            sound2.pause();
+            sound2.currentTime = 0; // Reset to the start
+
+            // Clear the timer
+            clearTimeout(timer);
+        }
+
+        // Initialize timer
+        resetTimer();
+    </script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/66bf89f6146b7af4a43b4b8c/1i5e35r10';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+</html>
+<body>
+  <h1>
+    RMN Socials (Scroll Down)
+  </h1>
+
+  <iframe src=
+"https://beacons.ai/woahrmn" 
+          height="420px" width="750px">
+  </iframe>
+    <footer class="copyright_div">
+      <a href="https://github.com/FQQD/MCServer-Web-Template" class="copyright">Made by FQQD 2023 All rights deserved. | Edited by GalaxyEXE : ]</a>
+    </footer>
+  </body>
+</html>

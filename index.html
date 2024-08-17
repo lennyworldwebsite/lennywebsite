@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="icon" type="image/png" href="media/favicon.png">
+    <link rel="stylesheet" href="media/style.css">
+    <link href="https://fonts.bunny.net/css?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <nav class="desktop_navbar">
+      <a href="#"><img class="desktop_navbar_logo_img" src="media/RMN ICON.png" alt="logo"></a>
+      <a href="socials.html" class=body> <a href="socials.html" class="desktop_navbar_link">Socials</a>
+      <a href="minecraft.html" class=body> <a href="minecraft.html" class="desktop_navbar_link">Minecraft</a>
+      </body>
+      </html>       
+      <div class="desktop_navbar_link2_div">
+        <a href= button onclick="LinkRedirect()" class="desktop_navbar_link2 scroll">Click Me!</a>  </button>
+          <!DOCTYPE html>
+<html>
+<body>
+
+
+
+<script>
+function LinkRedirect() {
+  location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+}
+</script>
+
+</body>
+</html> 
+
+      </div>
+    </nav>
+    
+    <div class="mobile_navbar">
+      <a href="#" class="mobile_navbar_logo_img_a"><img class="mobile_navbar_logo_img" src="media/rmn" alt="logo"></a>
+      <div id="mobile_navbar_links">
+        <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="socials.html">Socials</a>
+        <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="minecraft.html">Minecraft</a>
+        <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click Me!</a>
+
+    </div>
+        <div class="icon" onclick="mobile_navbar_link_hider()">
+            <i class="fa fa-bars"></i>
+        </div>
+        <script>
+            function mobile_navbar_link_hider() {
+            var x = document.getElementById("mobile_navbar_links");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+            } 
+            
+
+        </script>
+    </div>
+    <div class="mainflex">
+      <div class="main1">
+        <a class="main1_logo_a" href="#">
+            <img class="main1_logo" src="media/RMN BIG.png" alt="logo">
+        </a>
+        <div class="main1_description">
+          <a>WoahRMN,<br>The</a>
+          <a class="main1_actcent">variety streamer</a><a>.</a>
+        </div>
+        <div class="main1_ipcopier_div">
+          <button class="main1_ipcopier" onclick="copyText()" type="button">
+            <span class="main1_ipcopier_text1">Discord Server Link</span>
+            <br>
+            <span class="main1_ipcopier_text2">Click to copy</span>
+          </button>
+          <script>
+            function copyText() {
+                navigator.clipboard.writeText
+            ("https://discord.gg/Adq6tHyCXQ");
+                }
+            $(document).ready(function() {
+            $('.main1_ipcopier').click(function() {
+                var popup = $('<div>', { class: 'main1_popup' })
+                .append($('<h3 class="copy_confirm">').text('Copied Link to clipboard'))
+                $(this).after(popup);
+                setTimeout(function() {
+                popup.remove();
+                }, 1000);
+            });
+            });
+        </script> 
+        </div>
+        <a href="#more" class="scroll">
+          <img alt="downarrow" class="main1_downarrow" src="media/downarrow.png">
+        </a>
+        <script>
+          const scrollLinks = document.querySelectorAll('.scroll');
+          scrollLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+              event.preventDefault();
+              const target = document.querySelector(link.getAttribute('href'));
+              const offsetTop = target.offsetTop;
+              window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+              });
+            });
+          });
+        </script>
+      </div>
+      <div id="more"></div>
+      <div id="discord"></div>
+      <div class="main4">
+        <a class="headline">Join the Discord</a>
+        <div class="main4_dc_div">
+          <iframe class="main4_dc_widget" src="https://discord.com/widget?id=1059146878190628914&theme=dark" width="350" height="500" title="discord" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+          <div class="main4_dc_description_div">
+            <a class="main4_dc_description_title">Let's talk!</a>
+            <a class="main4_dc_description"> ・Meet other players <br> ・Ask questions <br> ・Get notified about updates <br> ・Give feedback  <br><br> &amp; more </a>
+            <a href="https://discord.gg/cFpXg5xxMb" class="main4_dc_button_a">
+              <div class="main4_dc_button">Join</div>
+            </a>
+          </div>
+        </div>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Interactive Website</title>
+            <style>
+                body {
+                    margin: 0;
+                    font-family: Arial, sans-serif;
+                    overflow: auto; /* Allow scrolling by default */
+                }
+        
+                /* Class to disable scrolling */
+                .no-scroll {
+                    overflow: hidden;
+                }
+        
+                #darkOverlay {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.9); /* Darker overlay */
+                    color: white;
+                    display: none; /* Initially hidden */
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 1000;
+                    transition: opacity 0.5s ease;
+                }
+        
+                .hidden {
+                    display: none;
+                }
+        
+                #prompt, #confirmationPrompt {
+                    text-align: center;
+                }
+        
+                #boobianaImage {
+                    max-width: 80%;
+                    height: auto;
+                    margin-bottom: 20px;
+                }
+        
+                button {
+                    margin: 10px;
+                    padding: 10px 20px;
+                    border: none;
+                    background: #333;
+                    color: white;
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+        
+                button:hover {
+                    background: #555;
+                }
+        
+                #typingText {
+                    white-space: pre-wrap;
+                    font-size: 1.2em;
+                    margin-bottom: 20px;
+                }
+        
+                /* Hide the prompt elements initially */
+                #prompt.hidden {
+                    display: none;
+                }
+        
+                /* Hide main content during jumpscare */
+                #mainContent.hidden {
+                    display: none;
+                }
+        
+                /* Hide Boobiana image and button initially */
+                #boobianaImage.hidden,
+                #understoodButton.hidden {
+                    display: none;
+                }
+        
+                /* Style for the well-done message */
+                #wellDoneMessage {
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: rgba(0, 0, 0, 0.8);
+                    color: white;
+                    padding: 20px;
+                    border-radius: 10px;
+                    z-index: 1001;
+                    display: none;
+                    font-size: 1.5em;
+                }
+            </style>
+        </head>
+        <body>
+            <div id="darkOverlay">
+                <div id="prompt">
+                    <img src="media/Boobiana PFP.png" alt="Boobiana" id="boobianaImage" class="hidden">
+                    <div id="typingText"></div>
+                    <button id="understoodButton" class="hidden">Understood</button>
+                </div>
+                <div id="confirmationPrompt" class="hidden">
+                    <p>Are you sure?</p>
+                    <button id="yesButton">Yes</button>
+                    <button id="noButton">No</button>
+                </div>
+            </div>
+        
+            <div id="mainContent">
+                <!-- Main content of your website goes here -->1
+            </div>
+        
+            <div id="wellDoneMessage">Well done.</div>
+        
+            <!-- Background song that plays on loop -->
+            <audio id="backgroundSong" src="SoundEffects/BoobianaTruth/BackroundSong.mp3" loop></audio>
+        
+            <!-- Typing effect sound -->
+            <audio id="typingSound" src="SoundEffects/BoobianaTruth/TypingEffect.mp3"></audio>
+        
+            <script>
+                let keyPressCount = 0;
+                let lastKeyPressTime = 0;
+                const PRESS_LIMIT = 5;
+                const TIME_LIMIT = 3000; // 3 seconds
+                let isOverlayVisible = false;
+                let hasTriggered = false; // Track if the jumpscare has been triggered
+                let typingSound = document.getElementById('typingSound');
+                let backgroundSong = document.getElementById('backgroundSong');
+                let typingTextElement = document.getElementById('typingText');
+                let isTyping = false;
+        
+                document.addEventListener('keydown', handleKeyPress);
+                document.addEventListener('touchstart', handleTouchStart);
+        
+                let touchCount = 0;
+                let touchStartTime = 0;
+        
+                function handleKeyPress(event) {
+                    if (event.key === 'b' || event.key === 'B') {
+                        const currentTime = Date.now();
+                        if (currentTime - lastKeyPressTime <= TIME_LIMIT) {
+                            keyPressCount++;
+                        } else {
+                            keyPressCount = 1; // Reset count if time limit exceeded
+                        }
+                        lastKeyPressTime = currentTime;
+        
+                        if (keyPressCount >= PRESS_LIMIT && !hasTriggered) {
+                            if (!isOverlayVisible) {
+                                showDarkOverlayForTypingMessage();
+                                hasTriggered = true; // Mark jumpscare as triggered
+                            }
+                            keyPressCount = 0; // Reset after triggering
+                        }
+                    }
+                }
+        
+                function handleTouchStart() {
+                    const currentTime = Date.now();
+                    if (currentTime - touchStartTime <= TIME_LIMIT) {
+                        touchCount++;
+                    } else {
+                        touchCount = 1; // Reset count if time limit exceeded
+                    }
+                    touchStartTime = currentTime;
+        
+                    if (touchCount >= PRESS_LIMIT && !hasTriggered) {
+                        if (!isOverlayVisible) {
+                            showDarkOverlayForTypingMessage();
+                            hasTriggered = true; // Mark jumpscare as triggered
+                        }
+                        touchCount = 0; // Reset after triggering
+                    }
+                }
+        
+                function showDarkOverlayForTypingMessage() {
+                    const overlay = document.getElementById('darkOverlay');
+                    document.getElementById('mainContent').classList.add('hidden'); // Hide main content
+                    document.getElementById('boobianaImage').classList.remove('hidden'); // Show the Boobiana image
+                    document.getElementById('understoodButton').classList.remove('hidden'); // Show the understood button
+                    overlay.style.display = 'flex'; // Show dark overlay
+                    document.body.classList.add('no-scroll'); // Disable scrolling
+                    displayTypingMessage("Boobiana isn't real, she's a man, a robot, controlled by the UK Government, mark my words.");
+                }
+        
+                function displayTypingMessage(message) {
+                    let index = 0;
+                    typingTextElement.innerHTML = ''; // Clear previous text
+        
+                    function typeMessage() {
+                        if (index < message.length) {
+                            typingTextElement.innerHTML += message[index++];
+                            typingSound.play(); // Play typing sound for each character
+                            setTimeout(typeMessage, 50); // Typing speed
+                        } else {
+                            // Typing animation done, stop audio
+                            typingSound.pause();
+                            typingSound.currentTime = 0; // Reset audio position
+                        }
+                    }
+        
+                    typeMessage();
+                }
+        
+                document.getElementById('understoodButton').addEventListener('click', () => {
+                    document.getElementById('prompt').classList.add('hidden');
+                    document.getElementById('confirmationPrompt').classList.remove('hidden');
+                    // Hide the Boobiana image and buttons after understood button is clicked
+                    document.getElementById('boobianaImage').classList.add('hidden');
+                    document.getElementById('understoodButton').classList.add('hidden');
+                });
+        
+                document.getElementById('yesButton').addEventListener('click', () => {
+                    const overlay = document.getElementById('darkOverlay');
+                    const wellDoneMessage = document.getElementById('wellDoneMessage');
+                    overlay.style.opacity = '0'; // Start fade-out
+                    wellDoneMessage.style.display = 'block'; // Show "Well done." message
+                    setTimeout(() => {
+                        wellDoneMessage.style.display = 'none'; // Hide "Well done." message
+                        setTimeout(() => {
+                            overlay.style.display = 'none'; // Hide dark overlay
+                            document.getElementById('mainContent').classList.remove('hidden'); // Show main content
+                            document.body.classList.remove('no-scroll'); // Restore scrolling
+                            isOverlayVisible = false;
+                        }, 500); // Delay to match fade-out duration
+                    }, 3000); // "Well done." message display duration
+                });
+        
+                document.getElementById('noButton').addEventListener('click', () => {
+                    typingSound.currentTime = 0; // Reset audio position before playing
+                    typingSound.play(); // Play typing sound
+                    backgroundSong.play(); // Play background song on loop
+                    document.body.innerHTML = `
+                        <div style="text-align: center; color: white; background: black; height: 100vh; display: flex; justify-content: center; align-items: center;">
+                            <p id="finalMessage"></p>
+                        </div>`;
+                    document.body.classList.add('no-scroll'); // Disable scrolling
+        
+                    const finalMessageElement = document.getElementById('finalMessage');
+                    const finalMessages = [
+                        "Your faith has been chosen",
+                        "...",
+                        "You are now stuck here forever"
+                    ];
+                    let messageIndex = 0;
+        
+                    function typeFinalMessage() {
+                        if (messageIndex < finalMessages.length) {
+                            const message = finalMessages[messageIndex];
+                            finalMessageElement.innerHTML = ''; // Clear previous text
+                            let charIndex = 0;
+        
+                            function typeChar() {
+                                if (charIndex < message.length) {
+                                    finalMessageElement.innerHTML += message[charIndex++];
+                                    setTimeout(typeChar, 50); // Typing speed
+                                } else {
+                                    messageIndex++;
+                                    setTimeout(typeFinalMessage, 1000); // Wait before displaying the next message
+                                }
+                            }
+        
+                            typeChar();
+                        } else {
+                            // Keep the final message on the screen forever
+                            finalMessageElement.innerHTML = finalMessages[finalMessages.length - 1];
+                        }
+                    }
+        
+                    typeFinalMessage();
+                });
+            </script>
+        </body>
+        </html>
+        
+      </div>
+
+      
+</body>
+</html>
+
+      Follow My TikTok!
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@woahrmn" data-unique-id="woahrmn" data-embed-type="creator" style="max-width: 780px; min-width: 288px;" > <section> <a target="_blank" href="https://www.tiktok.com/@woahrmn?refer=creator_embed">@woahrmn</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+      <!-- Social Media Icons by NiftyButtons https://niftybuttons.com --><div style="display: flex; flex-wrap:wrap; align-items: center; justify-content: center;"><a href="https://www.tiktok.com/@woahrmn" target="_blank" rel="noopener noreferrer" style="text-decoration:none;border:0;width:36px;height:36px;padding:2px;margin:5px;color:#16cae7;border-radius:50%;background-color:#0d2744;"><svg class="niftybutton-tiktok" style="display:block;fill:currentColor" data-donate="true" data-tag="tic" data-name="TikTok" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><title>TikTok social icon</title>
+     <path d="M 386.160156 141.550781 C 383.457031 140.15625 380.832031 138.625 378.285156 136.964844 C 370.878906 132.070312 364.085938 126.300781 358.058594 119.785156 C 342.976562 102.523438 337.339844 85.015625 335.265625 72.757812 L 335.351562 72.757812 C 333.617188 62.582031 334.332031 56 334.441406 56 L 265.742188 56 L 265.742188 321.648438 C 265.742188 325.214844 265.742188 328.742188 265.589844 332.226562 C 265.589844 332.660156 265.550781 333.058594 265.523438 333.523438 C 265.523438 333.714844 265.523438 333.917969 265.484375 334.117188 C 265.484375 334.167969 265.484375 334.214844 265.484375 334.265625 C 264.011719 353.621094 253.011719 370.976562 236.132812 380.566406 C 227.472656 385.496094 217.675781 388.078125 207.707031 388.066406 C 175.699219 388.066406 149.757812 361.964844 149.757812 329.734375 C 149.757812 297.5 175.699219 271.398438 207.707031 271.398438 C 213.765625 271.394531 219.789062 272.347656 225.550781 274.226562 L 225.632812 204.273438 C 190.277344 199.707031 154.621094 210.136719 127.300781 233.042969 C 115.457031 243.328125 105.503906 255.605469 97.882812 269.316406 C 94.984375 274.316406 84.042969 294.410156 82.714844 327.015625 C 81.882812 345.523438 87.441406 364.699219 90.089844 372.625 L 90.089844 372.792969 C 91.757812 377.457031 98.214844 393.382812 108.742188 406.808594 C 117.230469 417.578125 127.253906 427.035156 138.5 434.882812 L 138.5 434.714844 L 138.667969 434.882812 C 171.925781 457.484375 208.800781 456 208.800781 456 C 215.183594 455.742188 236.566406 456 260.851562 444.492188 C 287.785156 431.734375 303.117188 412.726562 303.117188 412.726562 C 312.914062 401.367188 320.703125 388.425781 326.148438 374.449219 C 332.367188 358.109375 334.441406 338.507812 334.441406 330.675781 L 334.441406 189.742188 C 335.273438 190.242188 346.375 197.582031 346.375 197.582031 C 346.375 197.582031 362.367188 207.832031 387.316406 214.507812 C 405.214844 219.257812 429.332031 220.257812 429.332031 220.257812 L 429.332031 152.058594 C 420.882812 152.976562 403.726562 150.308594 386.160156 141.550781 Z M 386.160156 141.550781"></path>
+    </svg></a><a href="https://www.instagram.com/woahrmnclips/" target="_blank" rel="noopener noreferrer" style="text-decoration:none;border:0;width:36px;height:36px;padding:2px;margin:5px;color:#16cae7;border-radius:50%;background-color:#0d2744;"><svg class="niftybutton-instagram" style="display:block;fill:currentColor" data-donate="true" data-tag="ins" data-name="Instagram" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><title>Instagram social icon</title>
+        <path d="M256 109.3c47.8 0 53.4 0.2 72.3 1 17.4 0.8 26.9 3.7 33.2 6.2 8.4 3.2 14.3 7.1 20.6 13.4 6.3 6.3 10.1 12.2 13.4 20.6 2.5 6.3 5.4 15.8 6.2 33.2 0.9 18.9 1 24.5 1 72.3s-0.2 53.4-1 72.3c-0.8 17.4-3.7 26.9-6.2 33.2 -3.2 8.4-7.1 14.3-13.4 20.6 -6.3 6.3-12.2 10.1-20.6 13.4 -6.3 2.5-15.8 5.4-33.2 6.2 -18.9 0.9-24.5 1-72.3 1s-53.4-0.2-72.3-1c-17.4-0.8-26.9-3.7-33.2-6.2 -8.4-3.2-14.3-7.1-20.6-13.4 -6.3-6.3-10.1-12.2-13.4-20.6 -2.5-6.3-5.4-15.8-6.2-33.2 -0.9-18.9-1-24.5-1-72.3s0.2-53.4 1-72.3c0.8-17.4 3.7-26.9 6.2-33.2 3.2-8.4 7.1-14.3 13.4-20.6 6.3-6.3 12.2-10.1 20.6-13.4 6.3-2.5 15.8-5.4 33.2-6.2C202.6 109.5 208.2 109.3 256 109.3M256 77.1c-48.6 0-54.7 0.2-73.8 1.1 -19 0.9-32.1 3.9-43.4 8.3 -11.8 4.6-21.7 10.7-31.7 20.6 -9.9 9.9-16.1 19.9-20.6 31.7 -4.4 11.4-7.4 24.4-8.3 43.4 -0.9 19.1-1.1 25.2-1.1 73.8 0 48.6 0.2 54.7 1.1 73.8 0.9 19 3.9 32.1 8.3 43.4 4.6 11.8 10.7 21.7 20.6 31.7 9.9 9.9 19.9 16.1 31.7 20.6 11.4 4.4 24.4 7.4 43.4 8.3 19.1 0.9 25.2 1.1 73.8 1.1s54.7-0.2 73.8-1.1c19-0.9 32.1-3.9 43.4-8.3 11.8-4.6 21.7-10.7 31.7-20.6 9.9-9.9 16.1-19.9 20.6-31.7 4.4-11.4 7.4-24.4 8.3-43.4 0.9-19.1 1.1-25.2 1.1-73.8s-0.2-54.7-1.1-73.8c-0.9-19-3.9-32.1-8.3-43.4 -4.6-11.8-10.7-21.7-20.6-31.7 -9.9-9.9-19.9-16.1-31.7-20.6 -11.4-4.4-24.4-7.4-43.4-8.3C310.7 77.3 304.6 77.1 256 77.1L256 77.1z"></path>
+        <path d="M256 164.1c-50.7 0-91.9 41.1-91.9 91.9s41.1 91.9 91.9 91.9 91.9-41.1 91.9-91.9S306.7 164.1 256 164.1zM256 315.6c-32.9 0-59.6-26.7-59.6-59.6s26.7-59.6 59.6-59.6 59.6 26.7 59.6 59.6S288.9 315.6 256 315.6z"></path>
+        <circle cx="351.5" cy="160.5" r="21.5"></circle>
+    </svg></a><a href="https://www.youtube.com/@woahRMN" target="_blank" rel="noopener noreferrer" style="text-decoration:none;border:0;width:36px;height:36px;padding:2px;margin:5px;color:#16cae7;border-radius:50%;background-color:#0d2744;"><svg class="niftybutton-youtube" style="display:block;fill:currentColor" data-donate="true" data-tag="you" data-name="YouTube" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><title>YouTube social icon</title>
+        <path d="M422.6 193.6c-5.3-45.3-23.3-51.6-59-54 -50.8-3.5-164.3-3.5-215.1 0 -35.7 2.4-53.7 8.7-59 54 -4 33.6-4 91.1 0 124.8 5.3 45.3 23.3 51.6 59 54 50.9 3.5 164.3 3.5 215.1 0 35.7-2.4 53.7-8.7 59-54C426.6 284.8 426.6 227.3 422.6 193.6zM222.2 303.4v-94.6l90.7 47.3L222.2 303.4z"></path>
+    </svg></a></div>
+    <footer class="copyright_div">
+      <a href="https://github.com/FQQD/MCServer-Web-Template" class="copyright">Made by FQQD 2023 All rights deserved. | Edited by GalaxyEXE : ]</a>
+    </footer>
+  </body>
+</html>
